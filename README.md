@@ -27,35 +27,29 @@ designed to interface with the [University of Pittsburgh's Cultural Revolution A
 - CUDA-capable GPU (recommended)
 - Tesseract OCR (for image text extraction)
 
-[//]: # (### Installation)
+### Installation
 
-[//]: # ()
-[//]: # (```bash)
 
-[//]: # (# Clone the repository)
+```bash
 
-[//]: # (git clone https://github.com/your-org/cr-archivist)
+# clone the repository
+git clone https://github.com/your-org/cr-archivist
 
-[//]: # (cd cr-archivist)
+cd cragemt
 
-[//]: # ()
-[//]: # (# Install dependencies)
 
-[//]: # (pip install -r requirements.txt)
+# install dependencies
+pip install -r requirements.txt
 
-[//]: # ()
-[//]: # (# Install Tesseract OCR)
 
-[//]: # (# Ubuntu/Debian:)
+# install Tesseract OCR
+# Ubuntu/Debian:
+sudo apt-get install tesseract-ocr tesseract-ocr-chi-sim
 
-[//]: # (sudo apt-get install tesseract-ocr tesseract-ocr-chi-sim)
+# macOS:
+brew install tesseract tesseract-lang
 
-[//]: # ()
-[//]: # (# macOS:)
-
-[//]: # (brew install tesseract tesseract-lang)
-
-[//]: # (```)
+```
 
 ### Running the Agent
 
@@ -125,13 +119,18 @@ cr-archivist/
 - [ ] Geographic mapping of events
 - [ ] Integration with academic databases
 
-## Technical Notes
+[//]: # (## Technical Notes)
 
-- **LLM**: Uses VLLM for efficient inference
-- **OCR**: Tesseract with Chinese language support
-- **Document Parsing**: Docling for PDF extraction
-- **UI**: Gradio for web interface
-- **Protocol**: MCP for tool standardization
+[//]: # ()
+[//]: # (- **LLM**: Uses VLLM for efficient inference)
+
+[//]: # (- **OCR**: Tesseract with Chinese language support)
+
+[//]: # (- **Document Parsing**: Docling for PDF extraction)
+
+[//]: # (- **UI**: Gradio for web interface)
+
+[//]: # (- **Protocol**: MCP for tool standardization)
 
 [//]: # (## Contributing)
 
